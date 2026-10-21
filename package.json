@@ -3,7 +3,7 @@
   "name": "markdown-preview",
   "title": "Markdown Preview",
   "description": "A simple way to preview markdown content",
-  "icon": "md-preview-icon.png",
+  "icon": "assets/md-preview-icon.png",
   "author": "almatkai",
   "license": "MIT",
   "categories": [
