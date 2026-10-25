@@ -1,0 +1,19 @@
+{
+  "name":"markdown-preview-v2-validation-only",
+  "private":true,
+  "version":"0.1.0",
+  "description":"Node is used only for actual source and beta renderer validation, never extension runtime",
+  "license":"MIT AND Apache-2.0 AND BSD-3-Clause AND Unicode-3.0",
+  "dependencies":{
+    "typescript":"5.9.3",
+    "react":"18.3.1",
+    "react-dom":"18.3.1",
+    "react-test-renderer":"18.3.1",
+    "marked":"18.0.2",
+    "marked-highlight":"2.2.4",
+    "highlight.js":"11.11.1",
+    "dompurify":"3.4.0",
+    "jsdom":"26.0.0",
+    "ajv":"8.17.1"
+  }
+}

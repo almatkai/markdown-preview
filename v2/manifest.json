@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 2,
+  "id": "com.tezbar.native.markdown-preview",
+  "slug": "markdown-preview",
+  "name": "Markdown Preview",
+  "version": "0.1.0",
+  "description": "A simple way to preview markdown content. Native V2 port; original extension by xjo_nd.",
+  "icon": "/extensions/icons/markdown-preview.png",
+  "runtime": "rust",
+  "replaces": ["raycast.markdown-preview"],
+  "platforms": ["macOS", "Windows"],
+  "preferences": [],
+  "commands": [{
+    "name": "preview-markdown",
+    "title": "Preview Markdown",
+    "description": "Write and preview Markdown content with real-time rendering",
+    "mode": "view",
+    "arguments": [],
+    "preferences": [],
+    "platforms": ["macOS", "Windows"],
+    "runtime": "rust"
+  }],
+  "verification": [
+    {"platform": "macOS", "state": "not-run", "note": "Headless source/contract tests only; host registration, rebuild and desktop QA pending."},
+    {"platform": "Windows", "state": "not-run", "note": "GNU target check/Clippy only; host registration, rebuild and desktop QA pending."}
+  ]
+}

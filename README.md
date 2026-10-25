@@ -70,3 +70,7 @@ npm run lint
 ## License
 
 MIT
+
+## Tezbar Native V2
+
+The separate Rust Native V2 port, validation evidence, integration steps and current limits are in [v2/README.md](v2/README.md). V1 remains available unchanged.

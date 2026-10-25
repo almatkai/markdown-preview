@@ -1,0 +1,119 @@
+--- a/src-tauri/src/native_core/extensions/v2_catalog.rs
++++ b/src-tauri/src/native_core/extensions/v2_catalog.rs
+@@ -1,3 +1,4 @@
++// Modified from pinned beta: update expected bundled manifest count for Markdown Preview.
+ //! Bundled manifests describe source commands; compiled dispatch decides coverage.
+ use super::v2_runtime;
+ use crate::native_core::common::{now_ms, read_json, write_json_atomic, CoreContext, CoreResult};
+@@ -169,7 +170,7 @@
+     #[test]
+     fn bundled_ids_and_coverage_are_consistent() {
+         let items = manifests();
+-        assert_eq!(items.len(), 11);
++        assert_eq!(items.len(), 12);
+         for item in items {
+             let slug = item["slug"].as_str().unwrap();
+             assert_eq!(item["id"], v2_runtime::canonical_id(slug));
+--- a/src-tauri/src/native_core/extensions/v2_runtime.rs
++++ b/src-tauri/src/native_core/extensions/v2_runtime.rs
+@@ -1,3 +1,4 @@
++// Modified from pinned beta: register Markdown Preview Native V2.
+ //! Compiled-in Native V2 adapter dispatch; no dynamic code or JavaScript execution.
+ use crate::native_core::common::{CoreContext, CoreResult};
+ use serde_json::Value;
+@@ -10,7 +11,7 @@
+     match value {
+         "amphetamine" | "audio-device" | "cleanshotx" | "color-picker" | "gif-search"
+         | "google-calendar" | "google-search" | "port-manager" | "speedtest" | "timers"
+-        | "perplexity" => Some(value),
++        | "perplexity" | "markdown-preview" => Some(value),
+         _ => None,
+     }
+ }
+@@ -19,6 +20,7 @@
+ }
+ pub(super) fn commands(slug: &str) -> &'static [&'static str] {
+     match slug {
++        "markdown-preview" => super::v2_markdown_preview::commands(),
+         "amphetamine" => super::v2_amphetamine::commands(),
+         "audio-device" => super::v2_audio_device::commands(),
+         "cleanshotx" => super::v2_cleanshotx::commands(),
+@@ -45,6 +47,9 @@
+     state: &mut Value,
+ ) -> CoreResult {
+     match slug {
++        "markdown-preview" => {
++            super::v2_markdown_preview::handle(ctx, command, operation, payload, state).await
++        }
+         "amphetamine" => {
+             super::v2_amphetamine::handle(ctx, command, operation, payload, state).await
+         }
+--- a/src-tauri/src/native_core/extensions/mod.rs
++++ b/src-tauri/src/native_core/extensions/mod.rs
+@@ -1,3 +1,4 @@
++// Modified from pinned beta: register Markdown Preview Native V2.
+ mod catalog;
+ mod native;
+ mod perplexity;
+@@ -12,6 +13,8 @@
+ mod v2_google_search;
+ mod v2_perplexity;
+ mod v2_port_manager;
++#[path = "../../../native-extensions/markdown-preview/adapter/v2_markdown_preview.rs"]
++mod v2_markdown_preview;
+ mod v2_runtime;
+ mod v2_sdk;
+ mod v2_speedtest;
+--- a/src-tauri/src/native_core/extensions/v2_catalog.json
++++ b/src-tauri/src/native_core/extensions/v2_catalog.json
+@@ -2589,5 +2589,50 @@
+         "state": "not-run"
+       }
+     ]
++  },
++  {
++    "schemaVersion": 2,
++    "id": "com.tezbar.native.markdown-preview",
++    "slug": "markdown-preview",
++    "name": "Markdown Preview",
++    "version": "0.1.0",
++    "description": "A simple way to preview markdown content. Native V2 port; original extension by xjo_nd.",
++    "icon": "/extensions/icons/markdown-preview.png",
++    "runtime": "rust",
++    "replaces": [
++      "raycast.markdown-preview"
++    ],
++    "platforms": [
++      "macOS",
++      "Windows"
++    ],
++    "preferences": [],
++    "commands": [
++      {
++        "name": "preview-markdown",
++        "title": "Preview Markdown",
++        "description": "Write and preview Markdown content with real-time rendering",
++        "mode": "view",
++        "arguments": [],
++        "preferences": [],
++        "platforms": [
++          "macOS",
++          "Windows"
++        ],
++        "runtime": "rust"
++      }
++    ],
++    "verification": [
++      {
++        "platform": "macOS",
++        "state": "not-run",
++        "note": "Headless source/contract tests only; host registration, rebuild and desktop QA pending."
++      },
++      {
++        "platform": "Windows",
++        "state": "not-run",
++        "note": "GNU target check/Clippy only; host registration, rebuild and desktop QA pending."
++      }
++    ]
+   }
+ ]
