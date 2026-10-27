@@ -1,0 +1,1060 @@
+{
+  "ownSha": "3cd8b99d5919ca6098db3edc08ea1a9f59ec0600",
+  "betaSha": "fd300e276356587726566026f072563eb9c34cb1",
+  "originalSha": "6734d85992290066fd31a7f5bee3cca3d3545a1a",
+  "files": [
+    {
+      "path": "fixtures/own/.gitignore",
+      "bytes": 68,
+      "sha256": "b027adcbb6131ef49be335e9a699657351ca3d5bb2b474379634d1714f5a585b",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:.gitignore"
+    },
+    {
+      "path": "fixtures/own/.prettierrc",
+      "bytes": 48,
+      "sha256": "af858765de11954366be23467b95bae5e1a86818411c6723df7542cea9ffd521",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:.prettierrc"
+    },
+    {
+      "path": "fixtures/own/CHANGELOG.md",
+      "bytes": 280,
+      "sha256": "521aaa99a31af961e33698a8323b02c60dd27c3103051ec3e618d5ee98e01289",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:CHANGELOG.md"
+    },
+    {
+      "path": "fixtures/own/LICENSE",
+      "bytes": 1087,
+      "sha256": "1d7dbdbcd4fe14dfa08334fab20bffad23c1290f195792a3a4420dadf9912f81",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:LICENSE"
+    },
+    {
+      "path": "fixtures/own/README.md",
+      "bytes": 1448,
+      "sha256": "c80ae84ebff0b6b9e4318b2a1e278a4827805c21974bfda356eb72a8758aa9e8",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:README.md"
+    },
+    {
+      "path": "fixtures/own/assets/md-preview-icon.png",
+      "bytes": 53005,
+      "sha256": "3dbd6f9010889aae1ee8b5d768aed2d6c92b808e1d0bc668a9d330d187aff40e",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:assets/md-preview-icon.png"
+    },
+    {
+      "path": "fixtures/own/eslint.config.js",
+      "bytes": 165,
+      "sha256": "ee5c9d0b4a4ad216ab018ae100e4cdea8bb620d554377a062c989ece90a8683c",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:eslint.config.js"
+    },
+    {
+      "path": "fixtures/own/metadata/markdown-preview-1.png",
+      "bytes": 784397,
+      "sha256": "db2412e7f76a7dd09c1ce25838aee11ad1cabdbb0961bfc8ddaf49c9ecd5c56e",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:metadata/markdown-preview-1.png"
+    },
+    {
+      "path": "fixtures/own/metadata/markdown-preview-2.png",
+      "bytes": 838528,
+      "sha256": "0be3c63b2a77044f1af50b9101e00987b74f68458273437f6408ef9000f6749d",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:metadata/markdown-preview-2.png"
+    },
+    {
+      "path": "fixtures/own/metadata/markdown-preview-3.png",
+      "bytes": 913706,
+      "sha256": "7b0436d398be39134b754847b614a0bb71bd7fcd7bd23f5e8ba6c80f906dd491",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:metadata/markdown-preview-3.png"
+    },
+    {
+      "path": "fixtures/own/package-lock.json",
+      "bytes": 71100,
+      "sha256": "43893e52ceb406b50bdc7bbbf3e57d77320b28b0ce9f9dbaa5e0f9d909263a54",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:package-lock.json"
+    },
+    {
+      "path": "fixtures/own/package.json",
+      "bytes": 1567,
+      "sha256": "31f87fcc2ab034397e10fe6b4c39bb3ac405d87875dd0cad5cd0ee5bcf3ed86d",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:package.json"
+    },
+    {
+      "path": "fixtures/own/raycast-env.d.ts",
+      "bytes": 689,
+      "sha256": "10ffac64b15eef093769aabd8acf6d86f75ebe27d42976a60cc50a084ac3a238",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:raycast-env.d.ts"
+    },
+    {
+      "path": "fixtures/own/src/preview-markdown.tsx",
+      "bytes": 2670,
+      "sha256": "91d225033eb0bec01cdcc5433979f41e87678c002ff463f86d22c44a0d436e08",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:src/preview-markdown.tsx"
+    },
+    {
+      "path": "fixtures/own/test/smoke.test.ts",
+      "bytes": 458,
+      "sha256": "68aaa08332ce682512e6f24add0a5fd54e3bc3a72755844b5cbc2019ca11e3bb",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:test/smoke.test.ts"
+    },
+    {
+      "path": "fixtures/own/tsconfig.json",
+      "bytes": 525,
+      "sha256": "bb151e8c2e5442f6f9e42b27c08d88b0f7d2c5c127268ce0aedab2ef964b1eee",
+      "source": "own:3cd8b99d5919ca6098db3edc08ea1a9f59ec0600:tsconfig.json"
+    },
+    {
+      "path": "fixtures/beta/docs/NATIVE_V2_FORMAT.md",
+      "bytes": 2593,
+      "sha256": "8bf9315ad047326dd6737587ca5491fc35faf5e3f92a2d9c63f596be0c8f7b7a",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:docs/NATIVE_V2_FORMAT.md"
+    },
+    {
+      "path": "fixtures/beta/schemas/extension-v2.schema.json",
+      "bytes": 2420,
+      "sha256": "6d5afda1b652605982104bdf16d1547547b98dfd707a7b2969316406c49f32af",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:schemas/extension-v2.schema.json"
+    },
+    {
+      "path": "fixtures/beta/src-tauri/src/native_core/common.rs",
+      "bytes": 7627,
+      "sha256": "280a0a2f0dd04a8570b320aafc0c3ece0f5de8ddb21c363645567d6a35d84da7",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src-tauri/src/native_core/common.rs"
+    },
+    {
+      "path": "fixtures/beta/src-tauri/src/native_core/platform.rs",
+      "bytes": 28906,
+      "sha256": "75fa7ce4204edbbdb0f4a5410895b32239939b707256c484dc3c4f9de390b5a1",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src-tauri/src/native_core/platform.rs"
+    },
+    {
+      "path": "fixtures/beta/src-tauri/src/native_core/extensions/v2_sdk.rs",
+      "bytes": 6755,
+      "sha256": "4f987346f863db9a7bd6aa1d5a99e149925dc69a44d629727ccc80a567cd27c2",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src-tauri/src/native_core/extensions/v2_sdk.rs"
+    },
+    {
+      "path": "fixtures/beta/src-tauri/src/native_core/extensions/v2_runtime.rs",
+      "bytes": 3110,
+      "sha256": "df96675ba916a3d70b8e0e5da76f7a9422d238cc3fbe3a5a6178fef21662a6a0",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src-tauri/src/native_core/extensions/v2_runtime.rs"
+    },
+    {
+      "path": "fixtures/beta/src-tauri/src/native_core/extensions/native.rs",
+      "bytes": 14551,
+      "sha256": "3192be6beccc110cd6daa22db412e0f90685957ec51b3c71103b78e239978691",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src-tauri/src/native_core/extensions/native.rs"
+    },
+    {
+      "path": "fixtures/beta/src-tauri/src/native_core/extensions/v2_catalog.rs",
+      "bytes": 6839,
+      "sha256": "651a16df484f42a827ac69e209e80d09cad868232d1953d241652a4a39481e16",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src-tauri/src/native_core/extensions/v2_catalog.rs"
+    },
+    {
+      "path": "fixtures/beta/src-tauri/src/native_core/extensions/v2_catalog.json",
+      "bytes": 71862,
+      "sha256": "6cba59a7a6ec10dbe985c8fa4f4be82e4b2495b3718fd9a9a8dd7b3169e977e7",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src-tauri/src/native_core/extensions/v2_catalog.json"
+    },
+    {
+      "path": "fixtures/beta/src-tauri/src/native_core/extensions/mod.rs",
+      "bytes": 6248,
+      "sha256": "73c3625fdaadb944431191294dbfaa4f38a878faa03f15a917863be9c311e04f",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src-tauri/src/native_core/extensions/mod.rs"
+    },
+    {
+      "path": "fixtures/beta/src/renderer/ui/Markdown.tsx",
+      "bytes": 7492,
+      "sha256": "d205312b35293a433d5398e4edf1dcc96662cacd34036e8ee3ec503f65eee2de",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src/renderer/ui/Markdown.tsx"
+    },
+    {
+      "path": "fixtures/beta/src/renderer/src/raycast-api/index.tsx",
+      "bytes": 7419,
+      "sha256": "7fc8413a72b92e8f88b0939cd93f91624018fe0765baa1e71b38b86f8cc77a64",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src/renderer/src/raycast-api/index.tsx"
+    },
+    {
+      "path": "fixtures/beta/src/renderer/src/raycast-api/form-runtime.tsx",
+      "bytes": 21087,
+      "sha256": "8568d0ac5be03eea97d0def38067dbbbdce5ae97c36a51024857ef20dce299a6",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src/renderer/src/raycast-api/form-runtime.tsx"
+    },
+    {
+      "path": "fixtures/beta/src/renderer/src/raycast-api/detail-runtime.tsx",
+      "bytes": 23478,
+      "sha256": "32eecb50891e0f282bd3d78d8a38193ec24540bf70c3fdc8e43a1d368c97d54c",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src/renderer/src/raycast-api/detail-runtime.tsx"
+    },
+    {
+      "path": "fixtures/beta/src/renderer/src/raycast-api/action-runtime-overlay.tsx",
+      "bytes": 2915,
+      "sha256": "3eb4a59db0de59460ea8a2c7f4a1f6ec5b514a512f49352bf373db64ed58d604",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src/renderer/src/raycast-api/action-runtime-overlay.tsx"
+    },
+    {
+      "path": "fixtures/beta/src/renderer/src/raycast-api/action-runtime-registry.tsx",
+      "bytes": 692,
+      "sha256": "ffbad6f70410c6d2dcf4af217abe4ab297d69c0cae2c993263c008a423175e16",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src/renderer/src/raycast-api/action-runtime-registry.tsx"
+    },
+    {
+      "path": "fixtures/beta/src/renderer/src/raycast-api/list-runtime.tsx",
+      "bytes": 32174,
+      "sha256": "c7e253c34ce6e0a5132cab96bf1f0388393faca79ff57c3fdc7956f377a0ab0f",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src/renderer/src/raycast-api/list-runtime.tsx"
+    },
+    {
+      "path": "fixtures/beta/package.json",
+      "bytes": 2909,
+      "sha256": "a9e41304960cd456d9f0b223110cd3abfd012c8899fa703acacee6b0d719faf7",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:package.json"
+    },
+    {
+      "path": "fixtures/beta/LICENSE",
+      "bytes": 10750,
+      "sha256": "0ed6b1b2760294d4aaaa45be38e166fcc0168e1dd5190423c096fcbe1c94afbf",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:LICENSE"
+    },
+    {
+      "path": "fixtures/original/extensions/markdown-preview/package.json",
+      "bytes": 1408,
+      "sha256": "c06fa0c52a37b0a7578015aaae3b5843d4b7906d37777e786a45f559555b9f0f",
+      "source": "original:6734d85992290066fd31a7f5bee3cca3d3545a1a:extensions/markdown-preview/package.json"
+    },
+    {
+      "path": "fixtures/original/extensions/markdown-preview/src/preview-markdown.tsx",
+      "bytes": 2670,
+      "sha256": "91d225033eb0bec01cdcc5433979f41e87678c002ff463f86d22c44a0d436e08",
+      "source": "original:6734d85992290066fd31a7f5bee3cca3d3545a1a:extensions/markdown-preview/src/preview-markdown.tsx"
+    },
+    {
+      "path": "fixtures/original/extensions/markdown-preview/assets/md-preview-icon.png",
+      "bytes": 53005,
+      "sha256": "3dbd6f9010889aae1ee8b5d768aed2d6c92b808e1d0bc668a9d330d187aff40e",
+      "source": "original:6734d85992290066fd31a7f5bee3cca3d3545a1a:extensions/markdown-preview/assets/md-preview-icon.png"
+    },
+    {
+      "path": "fixtures/original/LICENSE",
+      "bytes": 1064,
+      "sha256": "7f727f8b20cdd0e65f84e70b9cac2fce337dcecee4dc88955eb012ea27f02755",
+      "source": "original:6734d85992290066fd31a7f5bee3cca3d3545a1a:LICENSE"
+    },
+    {
+      "path": "assets/markdown-preview.png",
+      "bytes": 53005,
+      "sha256": "3dbd6f9010889aae1ee8b5d768aed2d6c92b808e1d0bc668a9d330d187aff40e",
+      "source": "original icon, exact bytes"
+    },
+    {
+      "path": "fixtures/beta/src/shared/extensionRuntime.ts",
+      "bytes": 3838,
+      "sha256": "837b804856baa6b16ebda080920af456268fefcffa7a1c3e2964b95d697ee387",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src/shared/extensionRuntime.ts"
+    },
+    {
+      "path": "fixtures/beta/pnpm-lock.yaml",
+      "bytes": 158612,
+      "sha256": "9ea96c8e56c802695899d7014a573fadff8a37fd665fa71225526bd41b659bfc",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:pnpm-lock.yaml"
+    },
+    {
+      "path": "fixtures/libraries/marked-14/package.json",
+      "bytes": 3746,
+      "sha256": "bc5838d2794687d8995868b53a7bece008a9ccb45f0ab3c9c1dfc873de9f3405",
+      "source": "npm own lock: marked@14.1.4"
+    },
+    {
+      "path": "fixtures/libraries/marked-14/LICENSE.md",
+      "bytes": 2942,
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c",
+      "source": "npm own lock: marked@14.1.4"
+    },
+    {
+      "path": "fixtures/libraries/marked-14/lib/marked.cjs",
+      "bytes": 93112,
+      "sha256": "b2574d012254f22ff9f1ca22c91e12b614d68e94c4d3d400413d4ec97f4df782",
+      "source": "npm own lock: marked@14.1.4"
+    },
+    {
+      "path": "fixtures/beta/src/renderer/src/raycast-api/action-runtime.tsx",
+      "bytes": 391,
+      "sha256": "6e7a41e3d1a7ee2028103683f08fb8ed20e4b2e5751e182afe9f8e189522a28b",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src/renderer/src/raycast-api/action-runtime.tsx"
+    },
+    {
+      "path": "fixtures/beta/src-tauri/src/native_core/launcher/clipboard.rs",
+      "bytes": 32045,
+      "sha256": "b76fc181e2685d5025a117fc2b53d8c166dc32cdded4651359d42c5bb78a6706",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src-tauri/src/native_core/launcher/clipboard.rs"
+    },
+    {
+      "path": "fixtures/beta/src-tauri/Cargo.toml.fixture",
+      "bytes": 2141,
+      "sha256": "98b2ca2dd131ec4ca8a9dc9d5c41a7fd2c25a3079f58813e051a1b9761849b0c",
+      "source": "beta:fd300e276356587726566026f072563eb9c34cb1:src-tauri/Cargo.toml"
+    },
+    {
+      "path": "fixtures/libraries/marked-18/package.json",
+      "bytes": 3396,
+      "sha256": "cf405d93a1423b7f52096714a07cae76dac5e1c87edb0f8745d7f4512fdb9e18",
+      "source": "npm validation lock: marked / pinned beta pnpm lock"
+    },
+    {
+      "path": "fixtures/libraries/marked-18/LICENSE.md",
+      "bytes": 2942,
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c",
+      "source": "npm validation lock: marked / pinned beta pnpm lock"
+    },
+    {
+      "path": "fixtures/libraries/marked-18/lib/marked.esm.js",
+      "bytes": 41998,
+      "sha256": "eb33ec3c8a8d1ba68bca489520bfb8d7f46eb3306129b9c68659ee11885520ca",
+      "source": "npm validation lock: marked / pinned beta pnpm lock"
+    },
+    {
+      "path": "fixtures/libraries/dompurify/package.json",
+      "bytes": 5969,
+      "sha256": "8f7e6838d03bbf9aa12ba3e2fa4b893915c11f22ed29c2f5a0051bf7a3c67758",
+      "source": "npm validation lock: dompurify / pinned beta pnpm lock"
+    },
+    {
+      "path": "fixtures/libraries/dompurify/LICENSE",
+      "bytes": 27729,
+      "sha256": "1b02e03c3fb4f87d476c128f0eb9def1f5a1709d28b180465228bd41574623b7",
+      "source": "npm validation lock: dompurify / pinned beta pnpm lock"
+    },
+    {
+      "path": "fixtures/libraries/dompurify/dist/purify.cjs.js",
+      "bytes": 64984,
+      "sha256": "cae542bb4752bf0e76a4a5ec74ac76f007e9b1e977b885495cda1cd9f70a220b",
+      "source": "npm validation lock: dompurify / pinned beta pnpm lock"
+    },
+    {
+      "path": "fixtures/libraries/highlight/package.json",
+      "bytes": 3568,
+      "sha256": "c62d61e26896bac4ea1ed0e014a0e588a51330e49b76047a430ea44b9bb863aa",
+      "source": "npm validation lock: highlight.js / pinned beta pnpm lock"
+    },
+    {
+      "path": "fixtures/libraries/highlight/LICENSE",
+      "bytes": 1514,
+      "sha256": "6c081431591d9df696c82dc598fe1423765b8a299b200ed00b281afd0f64c490",
+      "source": "npm validation lock: highlight.js / pinned beta pnpm lock"
+    },
+    {
+      "path": "fixtures/libraries/marked-highlight/package.json",
+      "bytes": 1903,
+      "sha256": "47076085f4b9fb68fa4c4cb5b68847ced9c80078b1050e402b5b5ade53631484",
+      "source": "npm validation lock: marked-highlight / pinned beta pnpm lock"
+    },
+    {
+      "path": "fixtures/libraries/marked-highlight/LICENSE",
+      "bytes": 1066,
+      "sha256": "a846b93fda6af8008a89d1394d827afc60d62eebb70c68efbfeeafe0b01928ed",
+      "source": "npm validation lock: marked-highlight / pinned beta pnpm lock"
+    },
+    {
+      "path": "licenses/rust/aho-corasick-1.1.5/COPYING",
+      "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f",
+      "bytes": 126,
+      "source": "Cargo.lock crate license: aho-corasick-1.1.5"
+    },
+    {
+      "path": "licenses/rust/aho-corasick-1.1.5/LICENSE-MIT",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+      "bytes": 1081,
+      "source": "Cargo.lock crate license: aho-corasick-1.1.5"
+    },
+    {
+      "path": "licenses/rust/aho-corasick-1.1.5/UNLICENSE",
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c",
+      "bytes": 1211,
+      "source": "Cargo.lock crate license: aho-corasick-1.1.5"
+    },
+    {
+      "path": "licenses/rust/bitflags-2.13.2/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: bitflags-2.13.2"
+    },
+    {
+      "path": "licenses/rust/bitflags-2.13.2/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "source": "Cargo.lock crate license: bitflags-2.13.2"
+    },
+    {
+      "path": "licenses/rust/cfg-if-1.0.5/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: cfg-if-1.0.5"
+    },
+    {
+      "path": "licenses/rust/cfg-if-1.0.5/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "source": "Cargo.lock crate license: cfg-if-1.0.5"
+    },
+    {
+      "path": "licenses/rust/getrandom-0.3.4/LICENSE-APACHE",
+      "sha256": "aaff376532ea30a0cd5330b9502ad4a4c8bf769c539c87ffe78819d188a18ebf",
+      "bytes": 10849,
+      "source": "Cargo.lock crate license: getrandom-0.3.4"
+    },
+    {
+      "path": "licenses/rust/getrandom-0.3.4/LICENSE-MIT",
+      "sha256": "29e9fe5074bd27e0e5d5d110394fbbcd841baee2651a3c4b4560a632702cede4",
+      "bytes": 1130,
+      "source": "Cargo.lock crate license: getrandom-0.3.4"
+    },
+    {
+      "path": "licenses/rust/itoa-1.0.18/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: itoa-1.0.18"
+    },
+    {
+      "path": "licenses/rust/itoa-1.0.18/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: itoa-1.0.18"
+    },
+    {
+      "path": "licenses/rust/libc-0.2.191/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: libc-0.2.191"
+    },
+    {
+      "path": "licenses/rust/libc-0.2.191/LICENSE-MIT",
+      "sha256": "123a331b5dbf04c30097fa43b8f858bc85df671fe776de498d01f3d6b7c1f69e",
+      "bytes": 1066,
+      "source": "Cargo.lock crate license: libc-0.2.191"
+    },
+    {
+      "path": "licenses/rust/memchr-2.8.3/COPYING",
+      "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f",
+      "bytes": 126,
+      "source": "Cargo.lock crate license: memchr-2.8.3"
+    },
+    {
+      "path": "licenses/rust/memchr-2.8.3/LICENSE-MIT",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+      "bytes": 1081,
+      "source": "Cargo.lock crate license: memchr-2.8.3"
+    },
+    {
+      "path": "licenses/rust/memchr-2.8.3/UNLICENSE",
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c",
+      "bytes": 1211,
+      "source": "Cargo.lock crate license: memchr-2.8.3"
+    },
+    {
+      "path": "licenses/rust/proc-macro2-1.0.107/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: proc-macro2-1.0.107"
+    },
+    {
+      "path": "licenses/rust/proc-macro2-1.0.107/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: proc-macro2-1.0.107"
+    },
+    {
+      "path": "licenses/rust/pulldown-cmark-0.13.0/LICENSE",
+      "sha256": "c4f10f55904bdb9f27d3fbf94c354926d6cfe8b982276e556238c258941b243b",
+      "bytes": 1089,
+      "source": "Cargo.lock crate license: pulldown-cmark-0.13.0"
+    },
+    {
+      "path": "licenses/rust/pulldown-cmark-escape-0.11.0/LICENSE",
+      "sha256": "c4f10f55904bdb9f27d3fbf94c354926d6cfe8b982276e556238c258941b243b",
+      "bytes": 1089,
+      "source": "Cargo.lock crate license: pulldown-cmark-escape-0.11.0"
+    },
+    {
+      "path": "licenses/rust/quote-1.0.47/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: quote-1.0.47"
+    },
+    {
+      "path": "licenses/rust/quote-1.0.47/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: quote-1.0.47"
+    },
+    {
+      "path": "licenses/rust/regex-1.12.2/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: regex-1.12.2"
+    },
+    {
+      "path": "licenses/rust/regex-1.12.2/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "source": "Cargo.lock crate license: regex-1.12.2"
+    },
+    {
+      "path": "licenses/rust/regex-automata-0.4.18/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: regex-automata-0.4.18"
+    },
+    {
+      "path": "licenses/rust/regex-automata-0.4.18/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "source": "Cargo.lock crate license: regex-automata-0.4.18"
+    },
+    {
+      "path": "licenses/rust/regex-syntax-0.8.11/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: regex-syntax-0.8.11"
+    },
+    {
+      "path": "licenses/rust/regex-syntax-0.8.11/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "source": "Cargo.lock crate license: regex-syntax-0.8.11"
+    },
+    {
+      "path": "licenses/rust/ryu-1.0.23/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: ryu-1.0.23"
+    },
+    {
+      "path": "licenses/rust/ryu-1.0.23/LICENSE-BOOST",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+      "bytes": 1338,
+      "source": "Cargo.lock crate license: ryu-1.0.23"
+    },
+    {
+      "path": "licenses/rust/serde-1.0.228/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: serde-1.0.228"
+    },
+    {
+      "path": "licenses/rust/serde-1.0.228/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: serde-1.0.228"
+    },
+    {
+      "path": "licenses/rust/serde_core-1.0.228/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: serde_core-1.0.228"
+    },
+    {
+      "path": "licenses/rust/serde_core-1.0.228/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: serde_core-1.0.228"
+    },
+    {
+      "path": "licenses/rust/serde_derive-1.0.228/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: serde_derive-1.0.228"
+    },
+    {
+      "path": "licenses/rust/serde_derive-1.0.228/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: serde_derive-1.0.228"
+    },
+    {
+      "path": "licenses/rust/serde_json-1.0.145/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: serde_json-1.0.145"
+    },
+    {
+      "path": "licenses/rust/serde_json-1.0.145/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: serde_json-1.0.145"
+    },
+    {
+      "path": "licenses/rust/syn-2.0.119/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: syn-2.0.119"
+    },
+    {
+      "path": "licenses/rust/syn-2.0.119/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: syn-2.0.119"
+    },
+    {
+      "path": "licenses/rust/unicase-2.10.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: unicase-2.10.0"
+    },
+    {
+      "path": "licenses/rust/unicase-2.10.0/LICENSE-MIT",
+      "sha256": "4f6bd11a0f17fe5b085ace1daaedb7b002a08316850dd9577c246c6a68a68e8c",
+      "bytes": 1063,
+      "source": "Cargo.lock crate license: unicase-2.10.0"
+    },
+    {
+      "path": "licenses/rust/unicode-ident-1.0.27/LICENSE-APACHE",
+      "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "bytes": 9723,
+      "source": "Cargo.lock crate license: unicode-ident-1.0.27"
+    },
+    {
+      "path": "licenses/rust/unicode-ident-1.0.27/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: unicode-ident-1.0.27"
+    },
+    {
+      "path": "licenses/rust/unicode-ident-1.0.27/LICENSE-UNICODE",
+      "sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1",
+      "bytes": 1995,
+      "source": "Cargo.lock crate license: unicode-ident-1.0.27"
+    },
+    {
+      "path": "licenses/rust/uuid-1.16.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: uuid-1.16.0"
+    },
+    {
+      "path": "licenses/rust/uuid-1.16.0/LICENSE-MIT",
+      "sha256": "436bc5a105d8e57dcd8778730f3754f7bf39c14d2f530e4cde4bd2d17a83ec3d",
+      "bytes": 1157,
+      "source": "Cargo.lock crate license: uuid-1.16.0"
+    },
+    {
+      "path": "licenses/rust/wasip2-1.0.4+wasi-0.2.12/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: wasip2-1.0.4+wasi-0.2.12"
+    },
+    {
+      "path": "licenses/rust/wasip2-1.0.4+wasi-0.2.12/LICENSE-Apache-2.0_WITH_LLVM-exception",
+      "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+      "bytes": 12243,
+      "source": "Cargo.lock crate license: wasip2-1.0.4+wasi-0.2.12"
+    },
+    {
+      "path": "licenses/rust/wasip2-1.0.4+wasi-0.2.12/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: wasip2-1.0.4+wasi-0.2.12"
+    },
+    {
+      "path": "licenses/rust/wit-bindgen-0.57.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: wit-bindgen-0.57.1"
+    },
+    {
+      "path": "licenses/rust/wit-bindgen-0.57.1/LICENSE-Apache-2.0_WITH_LLVM-exception",
+      "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+      "bytes": 12243,
+      "source": "Cargo.lock crate license: wit-bindgen-0.57.1"
+    },
+    {
+      "path": "licenses/rust/wit-bindgen-0.57.1/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: wit-bindgen-0.57.1"
+    },
+    {
+      "path": "licenses/rust/addr2line-0.25.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: addr2line-0.25.1"
+    },
+    {
+      "path": "licenses/rust/addr2line-0.25.1/LICENSE-MIT",
+      "sha256": "e99d88d232bf57d70f0fb87f6b496d44b6653f99f8a63d250a54c61ea4bcde40",
+      "bytes": 1069,
+      "source": "Cargo.lock crate license: addr2line-0.25.1"
+    },
+    {
+      "path": "licenses/rust/adler2-2.0.1/LICENSE-0BSD",
+      "sha256": "861399f8c21c042b110517e76dc6b63a2b334276c8cf17412fc3c8908ca8dc17",
+      "bytes": 665,
+      "source": "Cargo.lock crate license: adler2-2.0.1"
+    },
+    {
+      "path": "licenses/rust/adler2-2.0.1/LICENSE-APACHE",
+      "sha256": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb",
+      "bytes": 10860,
+      "source": "Cargo.lock crate license: adler2-2.0.1"
+    },
+    {
+      "path": "licenses/rust/adler2-2.0.1/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: adler2-2.0.1"
+    },
+    {
+      "path": "licenses/rust/backtrace-0.3.76/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: backtrace-0.3.76"
+    },
+    {
+      "path": "licenses/rust/backtrace-0.3.76/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "source": "Cargo.lock crate license: backtrace-0.3.76"
+    },
+    {
+      "path": "licenses/rust/errno-0.3.14/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: errno-0.3.14"
+    },
+    {
+      "path": "licenses/rust/errno-0.3.14/LICENSE-MIT",
+      "sha256": "8764a597675778ddfd4e25f81b08a05dbcf089ac05662df7613fe67f150e3aa2",
+      "bytes": 1054,
+      "source": "Cargo.lock crate license: errno-0.3.14"
+    },
+    {
+      "path": "licenses/rust/fastrand-2.5.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: fastrand-2.5.0"
+    },
+    {
+      "path": "licenses/rust/fastrand-2.5.0/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: fastrand-2.5.0"
+    },
+    {
+      "path": "licenses/rust/gimli-0.32.3/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: gimli-0.32.3"
+    },
+    {
+      "path": "licenses/rust/gimli-0.32.3/LICENSE-MIT",
+      "sha256": "7b63ecd5f1902af1b63729947373683c32745c16a10e8e6292e2e2dcd7e90ae0",
+      "bytes": 1071,
+      "source": "Cargo.lock crate license: gimli-0.32.3"
+    },
+    {
+      "path": "licenses/rust/linux-raw-sys-0.12.1/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: linux-raw-sys-0.12.1"
+    },
+    {
+      "path": "licenses/rust/linux-raw-sys-0.12.1/LICENSE-Apache-2.0_WITH_LLVM-exception",
+      "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+      "bytes": 12243,
+      "source": "Cargo.lock crate license: linux-raw-sys-0.12.1"
+    },
+    {
+      "path": "licenses/rust/linux-raw-sys-0.12.1/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: linux-raw-sys-0.12.1"
+    },
+    {
+      "path": "licenses/rust/log-0.4.27/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: log-0.4.27"
+    },
+    {
+      "path": "licenses/rust/log-0.4.27/LICENSE-MIT",
+      "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb",
+      "bytes": 1071,
+      "source": "Cargo.lock crate license: log-0.4.27"
+    },
+    {
+      "path": "licenses/rust/miniz_oxide-0.8.9/LICENSE",
+      "sha256": "4108245a1f2df9d4e94df8abed5b4ba0759bb2f9b40a6b939f1be141077ae50b",
+      "bytes": 1213,
+      "source": "Cargo.lock crate license: miniz_oxide-0.8.9"
+    },
+    {
+      "path": "licenses/rust/miniz_oxide-0.8.9/LICENSE-APACHE.md",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174,
+      "source": "Cargo.lock crate license: miniz_oxide-0.8.9"
+    },
+    {
+      "path": "licenses/rust/miniz_oxide-0.8.9/LICENSE-MIT.md",
+      "sha256": "799e9ca9d179295ef372f25d3769cdda7d25bb2668add6a6a1e22d1e4c678b8d",
+      "bytes": 1212,
+      "source": "Cargo.lock crate license: miniz_oxide-0.8.9"
+    },
+    {
+      "path": "licenses/rust/miniz_oxide-0.8.9/LICENSE-ZLIB.md",
+      "sha256": "0a54e647fe54104658b5e563c04c6f9edf251710e47bce692e0bd990a4ddaa39",
+      "bytes": 984,
+      "source": "Cargo.lock crate license: miniz_oxide-0.8.9"
+    },
+    {
+      "path": "licenses/rust/object-0.37.3/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: object-0.37.3"
+    },
+    {
+      "path": "licenses/rust/object-0.37.3/LICENSE-MIT",
+      "sha256": "0b74dfa0bcee5c420c6b7f67b4b2658f9ab8388c97b8e733975f2cecbdd668a6",
+      "bytes": 1064,
+      "source": "Cargo.lock crate license: object-0.37.3"
+    },
+    {
+      "path": "licenses/rust/once_cell-1.21.4/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: once_cell-1.21.4"
+    },
+    {
+      "path": "licenses/rust/once_cell-1.21.4/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: once_cell-1.21.4"
+    },
+    {
+      "path": "licenses/rust/pin-project-lite-0.2.17/LICENSE-APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "bytes": 10174,
+      "source": "Cargo.lock crate license: pin-project-lite-0.2.17"
+    },
+    {
+      "path": "licenses/rust/pin-project-lite-0.2.17/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: pin-project-lite-0.2.17"
+    },
+    {
+      "path": "licenses/rust/rustc-demangle-0.1.28/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: rustc-demangle-0.1.28"
+    },
+    {
+      "path": "licenses/rust/rustc-demangle-0.1.28/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397",
+      "bytes": 1057,
+      "source": "Cargo.lock crate license: rustc-demangle-0.1.28"
+    },
+    {
+      "path": "licenses/rust/rustix-1.1.5/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: rustix-1.1.5"
+    },
+    {
+      "path": "licenses/rust/rustix-1.1.5/LICENSE-Apache-2.0_WITH_LLVM-exception",
+      "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+      "bytes": 12243,
+      "source": "Cargo.lock crate license: rustix-1.1.5"
+    },
+    {
+      "path": "licenses/rust/rustix-1.1.5/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "bytes": 1023,
+      "source": "Cargo.lock crate license: rustix-1.1.5"
+    },
+    {
+      "path": "licenses/rust/tempfile-3.20.0/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "source": "Cargo.lock crate license: tempfile-3.20.0"
+    },
+    {
+      "path": "licenses/rust/tempfile-3.20.0/LICENSE-MIT",
+      "sha256": "8b427f5bc501764575e52ba4f9d95673cf8f6d80a86d0d06599852e1a9a20a36",
+      "bytes": 1056,
+      "source": "Cargo.lock crate license: tempfile-3.20.0"
+    },
+    {
+      "path": "licenses/rust/tokio-1.43.0/LICENSE",
+      "sha256": "253cd04c6714889df2d32f3f64d669179a1c95c76ac43c40882c52eb06bc3552",
+      "bytes": 1070,
+      "source": "Cargo.lock crate license: tokio-1.43.0"
+    },
+    {
+      "path": "licenses/rust/tokio-macros-2.5.0/LICENSE",
+      "sha256": "0b83dc40cba89b9922bb84b0a9c7d2768ce37c1d7e138b7424fd4549915778c9",
+      "bytes": 1102,
+      "source": "Cargo.lock crate license: tokio-macros-2.5.0"
+    },
+    {
+      "path": "licenses/rust/windows-link-0.2.1/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows-link-0.2.1"
+    },
+    {
+      "path": "licenses/rust/windows-link-0.2.1/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows-link-0.2.1"
+    },
+    {
+      "path": "licenses/rust/windows-sys-0.59.0/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows-sys-0.59.0"
+    },
+    {
+      "path": "licenses/rust/windows-sys-0.59.0/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows-sys-0.59.0"
+    },
+    {
+      "path": "licenses/rust/windows-sys-0.61.2/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows-sys-0.61.2"
+    },
+    {
+      "path": "licenses/rust/windows-sys-0.61.2/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows-sys-0.61.2"
+    },
+    {
+      "path": "licenses/rust/windows-targets-0.52.6/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows-targets-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows-targets-0.52.6/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows-targets-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_aarch64_gnullvm-0.52.6/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows_aarch64_gnullvm-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_aarch64_gnullvm-0.52.6/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows_aarch64_gnullvm-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_aarch64_msvc-0.52.6/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows_aarch64_msvc-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_aarch64_msvc-0.52.6/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows_aarch64_msvc-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_i686_gnu-0.52.6/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows_i686_gnu-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_i686_gnu-0.52.6/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows_i686_gnu-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_i686_gnullvm-0.52.6/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows_i686_gnullvm-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_i686_gnullvm-0.52.6/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows_i686_gnullvm-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_i686_msvc-0.52.6/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows_i686_msvc-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_i686_msvc-0.52.6/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows_i686_msvc-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_x86_64_gnu-0.52.6/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows_x86_64_gnu-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_x86_64_gnu-0.52.6/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows_x86_64_gnu-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_x86_64_gnullvm-0.52.6/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows_x86_64_gnullvm-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_x86_64_gnullvm-0.52.6/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows_x86_64_gnullvm-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_x86_64_msvc-0.52.6/license-apache-2.0",
+      "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "bytes": 11351,
+      "source": "Cargo.lock crate license: windows_x86_64_msvc-0.52.6"
+    },
+    {
+      "path": "licenses/rust/windows_x86_64_msvc-0.52.6/license-mit",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141,
+      "source": "Cargo.lock crate license: windows_x86_64_msvc-0.52.6"
+    },
+    {
+      "path": "licenses/rust/r-efi-5.3.0/README.md",
+      "sha256": "420f65fec3ba2e89d49da51b222d2881d26959037a7b7d3794143db4bd4627b1",
+      "bytes": 2919,
+      "evidenceOnly": true,
+      "source": "Cargo.lock crate license: r-efi-5.3.0"
+    },
+    {
+      "path": "licenses/rust/r-efi-5.3.0/AUTHORS",
+      "sha256": "ff92bed461f50338dd703a9ba9aee496a425957873df1d91192776e4bdf5dda7",
+      "bytes": 3693,
+      "evidenceOnly": true,
+      "source": "Cargo.lock crate license: r-efi-5.3.0"
+    },
+    {
+      "path": "licenses/rust/r-efi-5.3.0/Cargo.toml.orig",
+      "sha256": "57b6d9b9a1b6524f6b4dcc1dd24970ac03e6959786a6cfedaec9ba52878b4d3e",
+      "bytes": 1226,
+      "evidenceOnly": true,
+      "source": "Cargo.lock crate license: r-efi-5.3.0"
+    }
+  ]
+}

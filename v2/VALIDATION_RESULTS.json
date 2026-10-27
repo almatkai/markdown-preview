@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-25",
+  "sourceSha": "3cd8b99d5919ca6098db3edc08ea1a9f59ec0600",
+  "betaSha": "fd300e276356587726566026f072563eb9c34cb1",
+  "branch": "feat/native-v2-rust",
+  "environment": {
+    "host": "Darwin arm64",
+    "stable": "rustc 1.98.0 (88d9e12ae 2026-08-18)",
+    "msrv": "rustc 1.85.0 (4d91de4e4 2025-02-17)",
+    "windowsTarget": "x86_64-pc-windows-gnu"
+  },
+  "results": {
+    "rustDistinctTests": 36,
+    "engineTests": 16,
+    "adapterLifecycleTests": 14,
+    "actualCommonSdkCatalogTests": 6,
+    "toolchains": [
+      "stable",
+      "1.85.0"
+    ],
+    "strictAllTargetClippy": "pass both crates / both toolchains / macOS host and Windows GNU",
+    "format": "pass",
+    "actualOwnTsxOracleInputs": 184,
+    "acceptedPreviewCases": 180,
+    "sourceHtmlMismatches": 0,
+    "pinnedRendererAssertions": 37,
+    "requiredHostAckPatchAssertions": 13,
+    "schemaNegativeCases": 14,
+    "provenanceVerifiedPaths": 175,
+    "provenanceIgnoredPaths": 0,
+    "v1SmokeTests": 1,
+    "v1Typecheck": "pass",
+    "v1UnchangedTrackedFilesExcludingReadme": 15,
+    "extractedOfflineEngineAndAdapter": "pass stable and 1.85.0; cached dependencies required"
+  },
+  "notRun": [
+    "host registration/install/rebuild",
+    "real macOS desktop/UI/Markdown/clipboard/focus/paste QA",
+    "real Windows desktop/UI/Markdown/clipboard/focus/paste QA"
+  ],
+  "requiredHostPatch": "integration/markdown-copy-ack.patch (pinned code-block copy treats null as success)",
+  "evidenceLimits": [
+    "184-input Copy HTML parity is not full Marked/CommonMark conformance",
+    "XERJ incomplete due global RSS/HTTP429",
+    "individual icon creator/icon-specific license evidence absent; root MIT retained",
+    "r-efi optional UEFI crate has declarations but no standalone full license text"
+  ],
+  "effects": "Recording boundaries only; no real OS or user-file effects",
+  "publication": "nothing staged, committed, pushed, PR-created or deleted",
+  "hashes": {
+    "Cargo.lock": "5169d4b5ce920c9e11470924acb8811bdc9c1cf9549968f6c3aa5fc55a160e88",
+    "manifest.json": "ca52684badb8b88beb06e2ddba26c9d0616a089155359570985f77fab2830a7a",
+    "assets/markdown-preview.png": "3dbd6f9010889aae1ee8b5d768aed2d6c92b808e1d0bc668a9d330d187aff40e",
+    "fixtures/source-oracle.json": "213a1da431a1c04c1585f1c0059f681fa9c99f76bfa44fa0520e2b387eac0667",
+    "fixtures/wire.json": "3b0d35627b898fb7dfb7358de5e1ca38c8bfc552cabf3c27051e3e269c4e3013",
+    "adapter/v2_markdown_preview.rs": "836f2218f1d62935394ef6093cfeb3651c412ae30b329e6a3ceb5de3a5ee791b",
+    "integration/markdown-copy-ack.patch": "a432b049cd5705a7f30ee872e593741741abaef3cee69c5203da0945579e9033",
+    "PROVENANCE.json": "f7036b16f700a4ccd52520ba30f226619e0e25877e60d113e796151f96752302",
+    "LICENSE": "0489a4bd23aac3f8f67325138622806d10d71494888187c0968b056861c6f566"
+  }
+}

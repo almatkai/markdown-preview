@@ -1,0 +1,8 @@
+/target/
+/.scratch/
+/node_modules/
+# V1 ignores every dist directory; the locked oracle fixture is intentional.
+!fixtures/**/dist/
+!fixtures/**/dist/**
+
+/validation/node_modules/

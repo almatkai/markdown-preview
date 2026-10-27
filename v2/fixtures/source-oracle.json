@@ -1,0 +1,4764 @@
+{
+  "sourceSha": "3cd8b99d5919ca6098db3edc08ea1a9f59ec0600",
+  "markedVersion": "14.1.4",
+  "initial": {
+    "title": "Markdown Editor",
+    "field": {
+      "id": "markdown",
+      "title": "Markdown Content",
+      "info": "Examples: # Heading 1, **Bold text**, *italic text*, - Bullet list, [Link](url), `inline code`",
+      "placeholder": "Enter your Markdown content here...",
+      "value": "",
+      "enableMarkdown": true,
+      "storeValue": false
+    }
+  },
+  "navigation": {
+    "copied": [
+      {
+        "title": "Copy Markdown",
+        "content": "  # draft\n😀  "
+      },
+      {
+        "title": "Copy HTML",
+        "content": "<h1>draft</h1>\n<p>😀  </p>\n"
+      }
+    ],
+    "restored": "  # draft\n😀  ",
+    "cleared": "",
+    "calls": [
+      {
+        "route": "push"
+      },
+      {
+        "route": "pop"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "index": 0,
+      "input": "",
+      "accepted": false,
+      "html": null,
+      "markdown": null,
+      "statistics": null,
+      "actions": [
+        "Clear"
+      ]
+    },
+    {
+      "index": 1,
+      "input": " ",
+      "accepted": false,
+      "html": null,
+      "markdown": null,
+      "statistics": null,
+      "actions": [
+        "Clear"
+      ]
+    },
+    {
+      "index": 2,
+      "input": "\t\n\r",
+      "accepted": false,
+      "html": null,
+      "markdown": null,
+      "statistics": null,
+      "actions": [
+        "Clear"
+      ]
+    },
+    {
+      "index": 3,
+      "input": "﻿",
+      "accepted": false,
+      "html": null,
+      "markdown": null,
+      "statistics": null,
+      "actions": [
+        "Clear"
+      ]
+    },
+    {
+      "index": 4,
+      "input": "",
+      "accepted": true,
+      "html": "<p></p>\n",
+      "markdown": "",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "1"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 5,
+      "input": "# Heading 1",
+      "accepted": true,
+      "html": "<h1>Heading 1</h1>\n",
+      "markdown": "# Heading 1",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 6,
+      "input": "## Two\n\n### Three",
+      "accepted": true,
+      "html": "<h2>Two</h2>\n<h3>Three</h3>\n",
+      "markdown": "## Two\n\n### Three",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "17"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 7,
+      "input": "Heading\n=======",
+      "accepted": true,
+      "html": "<h1>Heading</h1>\n",
+      "markdown": "Heading\n=======",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "15"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 8,
+      "input": "Subtitle\n----",
+      "accepted": true,
+      "html": "<h2>Subtitle</h2>\n",
+      "markdown": "Subtitle\n----",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "13"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 9,
+      "input": "plain text",
+      "accepted": true,
+      "html": "<p>plain text</p>\n",
+      "markdown": "plain text",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "10"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 10,
+      "input": "first\nsecond",
+      "accepted": true,
+      "html": "<p>first<br>second</p>\n",
+      "markdown": "first\nsecond",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "12"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 11,
+      "input": "first  \nsecond",
+      "accepted": true,
+      "html": "<p>first<br>second</p>\n",
+      "markdown": "first  \nsecond",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "14"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 12,
+      "input": "first\\\nsecond",
+      "accepted": true,
+      "html": "<p>first<br>second</p>\n",
+      "markdown": "first\\\nsecond",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "13"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 13,
+      "input": "first\r\nsecond\rthird",
+      "accepted": true,
+      "html": "<p>first<br>second<br>third</p>\n",
+      "markdown": "first\r\nsecond\rthird",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "19"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 14,
+      "input": "a\n\nb",
+      "accepted": true,
+      "html": "<p>a</p>\n<p>b</p>\n",
+      "markdown": "a\n\nb",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "4"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 15,
+      "input": "**bold** and *italic*",
+      "accepted": true,
+      "html": "<p><strong>bold</strong> and <em>italic</em></p>\n",
+      "markdown": "**bold** and *italic*",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "21"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 16,
+      "input": "__bold__ _italic_",
+      "accepted": true,
+      "html": "<p><strong>bold</strong> <em>italic</em></p>\n",
+      "markdown": "__bold__ _italic_",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "17"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 17,
+      "input": "***both***",
+      "accepted": true,
+      "html": "<p><em><strong>both</strong></em></p>\n",
+      "markdown": "***both***",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "10"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 18,
+      "input": "~~deleted~~",
+      "accepted": true,
+      "html": "<p><del>deleted</del></p>\n",
+      "markdown": "~~deleted~~",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 19,
+      "input": "~single~",
+      "accepted": true,
+      "html": "<p><del>single</del></p>\n",
+      "markdown": "~single~",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "8"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 20,
+      "input": "a_b_c",
+      "accepted": true,
+      "html": "<p>a_b_c</p>\n",
+      "markdown": "a_b_c",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 21,
+      "input": "a*b*c",
+      "accepted": true,
+      "html": "<p>a<em>b</em>c</p>\n",
+      "markdown": "a*b*c",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 22,
+      "input": "\\*literal\\*",
+      "accepted": true,
+      "html": "<p>*literal*</p>\n",
+      "markdown": "\\*literal\\*",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 23,
+      "input": "`inline <code> & \"`",
+      "accepted": true,
+      "html": "<p><code>inline &lt;code&gt; &amp; &quot;</code></p>\n",
+      "markdown": "`inline <code> & \"`",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "19"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 24,
+      "input": "`` a ` b ``",
+      "accepted": true,
+      "html": "<p><code>a ` b</code></p>\n",
+      "markdown": "`` a ` b ``",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "5"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 25,
+      "input": "` x `",
+      "accepted": true,
+      "html": "<p><code>x</code></p>\n",
+      "markdown": "` x `",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 26,
+      "input": "```js\nconst x = \"<&>\";\n```",
+      "accepted": true,
+      "html": "<pre><code class=\"language-js\">const x = &quot;&lt;&amp;&gt;&quot;;\n</code></pre>\n",
+      "markdown": "```js\nconst x = \"<&>\";\n```",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "26"
+        },
+        {
+          "title": "Words",
+          "text": "6"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 27,
+      "input": "~~~python\nprint(1)\n~~~",
+      "accepted": true,
+      "html": "<pre><code class=\"language-python\">print(1)\n</code></pre>\n",
+      "markdown": "~~~python\nprint(1)\n~~~",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "22"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 28,
+      "input": "```rust extra\nfn main() {}\n```",
+      "accepted": true,
+      "html": "<pre><code class=\"language-rust\">fn main() {}\n</code></pre>\n",
+      "markdown": "```rust extra\nfn main() {}\n```",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "30"
+        },
+        {
+          "title": "Words",
+          "text": "6"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 29,
+      "input": "```\nunterminated",
+      "accepted": true,
+      "html": "<pre><code>unterminated\n</code></pre>\n",
+      "markdown": "```\nunterminated",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "16"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 30,
+      "input": "    indented\n    code",
+      "accepted": true,
+      "html": "<pre><code>indented\ncode\n</code></pre>\n",
+      "markdown": "    indented\n    code",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "21"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 31,
+      "input": "---",
+      "accepted": true,
+      "html": "<hr>\n",
+      "markdown": "---",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "3"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 32,
+      "input": "***",
+      "accepted": true,
+      "html": "<hr>\n",
+      "markdown": "***",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "3"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 33,
+      "input": "___",
+      "accepted": true,
+      "html": "<hr>\n",
+      "markdown": "___",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "3"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 34,
+      "input": "> quote\n> line",
+      "accepted": true,
+      "html": "<blockquote>\n<p>quote<br>line</p>\n</blockquote>\n",
+      "markdown": "> quote\n> line",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "14"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 35,
+      "input": "> one\n>\n> two",
+      "accepted": true,
+      "html": "<blockquote>\n<p>one</p>\n<p>two</p>\n</blockquote>\n",
+      "markdown": "> one\n>\n> two",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "13"
+        },
+        {
+          "title": "Words",
+          "text": "5"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 36,
+      "input": "> > nested",
+      "accepted": true,
+      "html": "<blockquote>\n<blockquote>\n<p>nested</p>\n</blockquote>\n</blockquote>\n",
+      "markdown": "> > nested",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "10"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 37,
+      "input": "- a\n- b",
+      "accepted": true,
+      "html": "<ul>\n<li>a</li>\n<li>b</li>\n</ul>\n",
+      "markdown": "- a\n- b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "7"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 38,
+      "input": "* a\n* b",
+      "accepted": true,
+      "html": "<ul>\n<li>a</li>\n<li>b</li>\n</ul>\n",
+      "markdown": "* a\n* b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "7"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 39,
+      "input": "+ a\n+ b",
+      "accepted": true,
+      "html": "<ul>\n<li>a</li>\n<li>b</li>\n</ul>\n",
+      "markdown": "+ a\n+ b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "7"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 40,
+      "input": "1. a\n2. b",
+      "accepted": true,
+      "html": "<ol>\n<li>a</li>\n<li>b</li>\n</ol>\n",
+      "markdown": "1. a\n2. b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "9"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 41,
+      "input": "3. a\n4. b",
+      "accepted": true,
+      "html": "<ol start=\"3\">\n<li>a</li>\n<li>b</li>\n</ol>\n",
+      "markdown": "3. a\n4. b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "9"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 42,
+      "input": "- a\n\n- b",
+      "accepted": true,
+      "html": "<ul>\n<li><p>a</p>\n</li>\n<li><p>b</p>\n</li>\n</ul>\n",
+      "markdown": "- a\n\n- b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "8"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 43,
+      "input": "- a\n  - nested\n  - more\n- b",
+      "accepted": true,
+      "html": "<ul>\n<li>a<ul>\n<li>nested</li>\n<li>more</li>\n</ul>\n</li>\n<li>b</li>\n</ul>\n",
+      "markdown": "- a\n  - nested\n  - more\n- b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "27"
+        },
+        {
+          "title": "Words",
+          "text": "8"
+        },
+        {
+          "title": "Lines",
+          "text": "4"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 44,
+      "input": "- [ ] task\n- [x] done\n- [X] also",
+      "accepted": true,
+      "html": "<ul>\n<li><input disabled=\"\" type=\"checkbox\"> task</li>\n<li><input checked=\"\" disabled=\"\" type=\"checkbox\"> done</li>\n<li><input checked=\"\" disabled=\"\" type=\"checkbox\"> also</li>\n</ul>\n",
+      "markdown": "- [ ] task\n- [x] done\n- [X] also",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "32"
+        },
+        {
+          "title": "Words",
+          "text": "10"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 45,
+      "input": "| a | b |\n| - | - |\n| c | d |",
+      "accepted": true,
+      "html": "<table>\n<thead>\n<tr>\n<th>a</th>\n<th>b</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>c</td>\n<td>d</td>\n</tr>\n</tbody></table>\n",
+      "markdown": "| a | b |\n| - | - |\n| c | d |",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "29"
+        },
+        {
+          "title": "Words",
+          "text": "15"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 46,
+      "input": "| left | mid | right |\n| :--- | :---: | ---: |\n| x | y | z |",
+      "accepted": true,
+      "html": "<table>\n<thead>\n<tr>\n<th align=\"left\">left</th>\n<th align=\"center\">mid</th>\n<th align=\"right\">right</th>\n</tr>\n</thead>\n<tbody><tr>\n<td align=\"left\">x</td>\n<td align=\"center\">y</td>\n<td align=\"right\">z</td>\n</tr>\n</tbody></table>\n",
+      "markdown": "| left | mid | right |\n| :--- | :---: | ---: |\n| x | y | z |",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "60"
+        },
+        {
+          "title": "Words",
+          "text": "21"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 47,
+      "input": "[Link](https://example.com)",
+      "accepted": true,
+      "html": "<p><a href=\"https://example.com\">Link</a></p>\n",
+      "markdown": "[Link](https://example.com)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "27"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 48,
+      "input": "[a](https://example.com \"title\")",
+      "accepted": true,
+      "html": "<p><a href=\"https://example.com\" title=\"title\">a</a></p>\n",
+      "markdown": "[a](https://example.com \"title\")",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "32"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 49,
+      "input": "[a](<https://example.com/a%20b>)",
+      "accepted": true,
+      "html": "<p><a href=\"https://example.com/a%20b\">a</a></p>\n",
+      "markdown": "[a](<https://example.com/a%20b>)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "32"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 50,
+      "input": "<https://example.com>",
+      "accepted": true,
+      "html": "<p><a href=\"https://example.com\">https://example.com</a></p>\n",
+      "markdown": "<https://example.com>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "21"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 51,
+      "input": "<a@example.com>",
+      "accepted": true,
+      "html": "<p><a href=\"mailto:a@example.com\">a@example.com</a></p>\n",
+      "markdown": "<a@example.com>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "15"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 52,
+      "input": "https://example.com",
+      "accepted": true,
+      "html": "<p><a href=\"https://example.com\">https://example.com</a></p>\n",
+      "markdown": "https://example.com",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "19"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 53,
+      "input": "www.example.com",
+      "accepted": true,
+      "html": "<p><a href=\"http://www.example.com\">www.example.com</a></p>\n",
+      "markdown": "www.example.com",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "15"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 54,
+      "input": "mail a@example.com!",
+      "accepted": true,
+      "html": "<p>mail <a href=\"mailto:a@example.com\">a@example.com</a>!</p>\n",
+      "markdown": "mail a@example.com!",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "19"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 55,
+      "input": "![alt](https://example.invalid/x.png)",
+      "accepted": true,
+      "html": "<p><img src=\"https://example.invalid/x.png\" alt=\"alt\"></p>\n",
+      "markdown": "![alt](https://example.invalid/x.png)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "37"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 56,
+      "input": "![a *b*](img.png \"title\")",
+      "accepted": true,
+      "html": "<p><img src=\"img.png\" alt=\"a *b*\" title=\"title\"></p>\n",
+      "markdown": "![a *b*](img.png \"title\")",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "25"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 57,
+      "input": "[ref][x]\n\n[x]: /url \"title\"",
+      "accepted": true,
+      "html": "<p><a href=\"/url\" title=\"title\">ref</a></p>\n",
+      "markdown": "[ref][x]\n\n[x]: /url \"title\"",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "27"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 58,
+      "input": "<div>raw & text</div>",
+      "accepted": true,
+      "html": "<div>raw & text</div>",
+      "markdown": "<div>raw & text</div>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "21"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 59,
+      "input": "<b>inline</b>",
+      "accepted": true,
+      "html": "<p><b>inline</b></p>\n",
+      "markdown": "<b>inline</b>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "13"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 60,
+      "input": "<script>alert(1)</script>",
+      "accepted": true,
+      "html": "<script>alert(1)</script>",
+      "markdown": "<script>alert(1)</script>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "25"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 61,
+      "input": "a & b < c > d \"quote\" 'apostrophe'",
+      "accepted": true,
+      "html": "<p>a &amp; b &lt; c &gt; d &quot;quote&quot; &#39;apostrophe&#39;</p>\n",
+      "markdown": "a & b < c > d \"quote\" 'apostrophe'",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "34"
+        },
+        {
+          "title": "Words",
+          "text": "9"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 62,
+      "input": "&amp; &copy; &#65; &#x1f600;",
+      "accepted": true,
+      "html": "<p>&amp; &copy; &#65; &#x1f600;</p>\n",
+      "markdown": "&amp; &copy; &#65; &#x1f600;",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "28"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 63,
+      "input": "😀 Қазаq 日本\nnext",
+      "accepted": true,
+      "html": "<p>😀 Қазаq 日本<br>next</p>\n",
+      "markdown": "😀 Қазаq 日本\nnext",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "16"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 64,
+      "input": " one two﻿three",
+      "accepted": true,
+      "html": "<p> one two﻿three</p>\n",
+      "markdown": " one two﻿three",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "14"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 65,
+      "input": "onetwo",
+      "accepted": true,
+      "html": "<p>onetwo</p>\n",
+      "markdown": "onetwo",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "8"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 66,
+      "input": "trailing\n",
+      "accepted": true,
+      "html": "<p>trailing</p>\n",
+      "markdown": "trailing\n",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "9"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 67,
+      "input": "a\n\n",
+      "accepted": true,
+      "html": "<p>a</p>\n",
+      "markdown": "a\n\n",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "3"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 68,
+      "input": "\n\na",
+      "accepted": true,
+      "html": "<p>a</p>\n",
+      "markdown": "\n\na",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "3"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 69,
+      "input": "a\u0000b",
+      "accepted": true,
+      "html": "<p>a\u0000b</p>\n",
+      "markdown": "a\u0000b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "3"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 70,
+      "input": "- **bold**\n- `code`",
+      "accepted": true,
+      "html": "<ul>\n<li><strong>bold</strong></li>\n<li><code>code</code></li>\n</ul>\n",
+      "markdown": "- **bold**\n- `code`",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "19"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 71,
+      "input": "> - a\n> - b",
+      "accepted": true,
+      "html": "<blockquote>\n<ul>\n<li>a</li>\n<li>b</li>\n</ul>\n</blockquote>\n",
+      "markdown": "> - a\n> - b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "6"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 72,
+      "input": "line\n# heading\ntext",
+      "accepted": true,
+      "html": "<p>line</p>\n<h1>heading</h1>\n<p>text</p>\n",
+      "markdown": "line\n# heading\ntext",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "19"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 73,
+      "input": "a\n---\nb",
+      "accepted": true,
+      "html": "<h2>a</h2>\n<p>b</p>\n",
+      "markdown": "a\n---\nb",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "7"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 74,
+      "input": "    <a>&\n\n    b",
+      "accepted": true,
+      "html": "<pre><code>&lt;a&gt;&amp;\n\nb\n</code></pre>\n",
+      "markdown": "    <a>&\n\n    b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "15"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 75,
+      "input": "```a&b\n<>&'\"\n```",
+      "accepted": true,
+      "html": "<pre><code class=\"language-a&amp;b\">&lt;&gt;&amp;&#39;&quot;\n</code></pre>\n",
+      "markdown": "```a&b\n<>&'\"\n```",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "16"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 76,
+      "input": "[](/empty)",
+      "accepted": true,
+      "html": "<p><a href=\"/empty\"></a></p>\n",
+      "markdown": "[](/empty)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "10"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 77,
+      "input": "![](/empty)",
+      "accepted": true,
+      "html": "<p><img src=\"/empty\" alt=\"\"></p>\n",
+      "markdown": "![](/empty)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 78,
+      "input": "[safe](javascript:alert(1))",
+      "accepted": true,
+      "html": "<p><a href=\"javascript:alert(1)\">safe</a></p>\n",
+      "markdown": "[safe](javascript:alert(1))",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "27"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 79,
+      "input": "<!-- comment -->\n\ntext",
+      "accepted": true,
+      "html": "<!-- comment -->\n\n<p>text</p>\n",
+      "markdown": "<!-- comment -->\n\ntext",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "22"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 80,
+      "input": "![only](https://example.invalid/only.png)",
+      "accepted": true,
+      "html": "<p><img src=\"https://example.invalid/only.png\" alt=\"only\"></p>\n",
+      "markdown": "![only](https://example.invalid/only.png)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "41"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 81,
+      "input": "~~a\nb~~",
+      "accepted": true,
+      "html": "<p><del>a<br>b</del></p>\n",
+      "markdown": "~~a\nb~~",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "7"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 82,
+      "input": "a\t\tb",
+      "accepted": true,
+      "html": "<p>a\t\tb</p>\n",
+      "markdown": "a\t\tb",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "4"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 83,
+      "input": "a\n\n\n b",
+      "accepted": true,
+      "html": "<p>a</p>\n<p> b</p>\n",
+      "markdown": "a\n\n\n b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "6"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "4"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 84,
+      "input": "<pre>\n*raw*\n</pre>\n\ntext",
+      "accepted": true,
+      "html": "<pre>\n*raw*\n</pre>\n\n<p>text</p>\n",
+      "markdown": "<pre>\n*raw*\n</pre>\n\ntext",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "24"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "5"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 85,
+      "input": "- a\n\n  paragraph\n\n- b",
+      "accepted": true,
+      "html": "<ul>\n<li><p>a</p>\n<p>paragraph</p>\n</li>\n<li><p>b</p>\n</li>\n</ul>\n",
+      "markdown": "- a\n\n  paragraph\n\n- b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "21"
+        },
+        {
+          "title": "Words",
+          "text": "5"
+        },
+        {
+          "title": "Lines",
+          "text": "5"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 86,
+      "input": "1. a\n\n2. b",
+      "accepted": true,
+      "html": "<ol>\n<li><p>a</p>\n</li>\n<li><p>b</p>\n</li>\n</ol>\n",
+      "markdown": "1. a\n\n2. b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "10"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 87,
+      "input": "[a](a?x=1&y=2)",
+      "accepted": true,
+      "html": "<p><a href=\"a?x=1&y=2\">a</a></p>\n",
+      "markdown": "[a](a?x=1&y=2)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "14"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 88,
+      "input": "[a](a%20b)",
+      "accepted": true,
+      "html": "<p><a href=\"a%20b\">a</a></p>\n",
+      "markdown": "[a](a%20b)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "10"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 89,
+      "input": "[a](a\\(b\\))",
+      "accepted": true,
+      "html": "<p><a href=\"a(b)\">a</a></p>\n",
+      "markdown": "[a](a\\(b\\))",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 90,
+      "input": "![a & b](a?x=1&y=2)",
+      "accepted": true,
+      "html": "<p><img src=\"a?x=1&y=2\" alt=\"a &amp; b\"></p>\n",
+      "markdown": "![a & b](a?x=1&y=2)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "19"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 91,
+      "input": "**bold**  ",
+      "accepted": true,
+      "html": "<p><strong>bold</strong>  </p>\n",
+      "markdown": "**bold**  ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "10"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 92,
+      "input": "[link](/x)  ",
+      "accepted": true,
+      "html": "<p><a href=\"/x\">link</a>  </p>\n",
+      "markdown": "[link](/x)  ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "12"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 93,
+      "input": "`code`  ",
+      "accepted": true,
+      "html": "<p><code>code</code>  </p>\n",
+      "markdown": "`code`  ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "8"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 94,
+      "input": "<b>x</b>  ",
+      "accepted": true,
+      "html": "<p><b>x</b>  </p>\n",
+      "markdown": "<b>x</b>  ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "10"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 95,
+      "input": "![a *b*](x)  ",
+      "accepted": true,
+      "html": "<p><img src=\"x\" alt=\"a *b*\">  </p>\n",
+      "markdown": "![a *b*](x)  ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "13"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 96,
+      "input": "- [x] **done**\n\n- [ ] second",
+      "accepted": true,
+      "html": "<ul>\n<li><p><input checked=\"\" disabled=\"\" type=\"checkbox\"> \n<strong>done</strong></p>\n</li>\n<li><p><input disabled=\"\" type=\"checkbox\"> \nsecond</p>\n</li>\n</ul>\n",
+      "markdown": "- [x] **done**\n\n- [ ] second",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "28"
+        },
+        {
+          "title": "Words",
+          "text": "7"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 97,
+      "input": "- [x] one\n\n  two",
+      "accepted": true,
+      "html": "<ul>\n<li><p><input checked=\"\" disabled=\"\" type=\"checkbox\"> \none</p>\n<p>two</p>\n</li>\n</ul>\n",
+      "markdown": "- [x] one\n\n  two",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "16"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 98,
+      "input": "| a | b |\n| --- | --- |",
+      "accepted": true,
+      "html": "<table>\n<thead>\n<tr>\n<th>a</th>\n<th>b</th>\n</tr>\n</thead>\n</table>\n",
+      "markdown": "| a | b |\n| --- | --- |",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "23"
+        },
+        {
+          "title": "Words",
+          "text": "10"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 99,
+      "input": "| a | b |\n| --- | --- |\n| one |\n| x | y | z |",
+      "accepted": true,
+      "html": "<table>\n<thead>\n<tr>\n<th>a</th>\n<th>b</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>one</td>\n<td></td>\n</tr>\n<tr>\n<td>x</td>\n<td>y</td>\n</tr>\n</tbody></table>\n",
+      "markdown": "| a | b |\n| --- | --- |\n| one |\n| x | y | z |",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "45"
+        },
+        {
+          "title": "Words",
+          "text": "20"
+        },
+        {
+          "title": "Lines",
+          "text": "4"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 100,
+      "input": "> quote\n\ntext",
+      "accepted": true,
+      "html": "<blockquote>\n<p>quote</p>\n</blockquote>\n<p>text</p>\n",
+      "markdown": "> quote\n\ntext",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "13"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 101,
+      "input": "> a\n> > b\n> c",
+      "accepted": true,
+      "html": "<blockquote>\n<p>a</p>\n<blockquote>\n<p>b<br>c</p>\n</blockquote>\n</blockquote>\n",
+      "markdown": "> a\n> > b\n> c",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "13"
+        },
+        {
+          "title": "Words",
+          "text": "7"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 102,
+      "input": "a\nb\n\nc",
+      "accepted": true,
+      "html": "<p>a<br>b</p>\n<p>c</p>\n",
+      "markdown": "a\nb\n\nc",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "6"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "4"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 103,
+      "input": "***a _b_***",
+      "accepted": true,
+      "html": "<p><em><strong>a <em>b</em></strong></em></p>\n",
+      "markdown": "***a _b_***",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 104,
+      "input": "<https://example.com/a?b=1&c=2>",
+      "accepted": true,
+      "html": "<p><a href=\"https://example.com/a?b=1&amp;c=2\">https://example.com/a?b=1&amp;c=2</a></p>\n",
+      "markdown": "<https://example.com/a?b=1&c=2>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "31"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 105,
+      "input": "https://example.com/a(b).",
+      "accepted": true,
+      "html": "<p><a href=\"https://example.com/a(b)\">https://example.com/a(b)</a>.</p>\n",
+      "markdown": "https://example.com/a(b).",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "25"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 106,
+      "input": "www.example.com/test,",
+      "accepted": true,
+      "html": "<p><a href=\"http://www.example.com/test\">www.example.com/test</a>,</p>\n",
+      "markdown": "www.example.com/test,",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "21"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 107,
+      "input": "A < B and &broken; &notvalid;",
+      "accepted": true,
+      "html": "<p>A &lt; B and &broken; &notvalid;</p>\n",
+      "markdown": "A < B and &broken; &notvalid;",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "29"
+        },
+        {
+          "title": "Words",
+          "text": "6"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 108,
+      "input": "[a](a \"b & c\")",
+      "accepted": true,
+      "html": "<p><a href=\"a\" title=\"b &amp; c\">a</a></p>\n",
+      "markdown": "[a](a \"b & c\")",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "14"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 109,
+      "input": "[a](<a b>)",
+      "accepted": true,
+      "html": "<p><a href=\"a%20b\">a</a></p>\n",
+      "markdown": "[a](<a b>)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "10"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 110,
+      "input": "[a](a\\b)",
+      "accepted": true,
+      "html": "<p><a href=\"a%5Cb\">a</a></p>\n",
+      "markdown": "[a](a\\b)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "8"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 111,
+      "input": "![a [b] c](x)",
+      "accepted": true,
+      "html": "<p><img src=\"x\" alt=\"a [b] c\"></p>\n",
+      "markdown": "![a [b] c](x)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "13"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 112,
+      "input": "![a `b`](x)",
+      "accepted": true,
+      "html": "<p><img src=\"x\" alt=\"a `b`\"></p>\n",
+      "markdown": "![a `b`](x)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 113,
+      "input": "![a &amp; b](x)",
+      "accepted": true,
+      "html": "<p><img src=\"x\" alt=\"a &amp; b\"></p>\n",
+      "markdown": "![a &amp; b](x)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "15"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 114,
+      "input": "foo_bar_baz",
+      "accepted": true,
+      "html": "<p>foo_bar_baz</p>\n",
+      "markdown": "foo_bar_baz",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 115,
+      "input": "~~strike~~ and ~single~",
+      "accepted": true,
+      "html": "<p><del>strike</del> and <del>single</del></p>\n",
+      "markdown": "~~strike~~ and ~single~",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "23"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 116,
+      "input": "~~foo~~bar",
+      "accepted": true,
+      "html": "<p><del>foo</del>bar</p>\n",
+      "markdown": "~~foo~~bar",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "10"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 117,
+      "input": "a___b___c",
+      "accepted": true,
+      "html": "<p>a___b___c</p>\n",
+      "markdown": "a___b___c",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "9"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 118,
+      "input": "```\n\n```",
+      "accepted": true,
+      "html": "<pre><code>\n</code></pre>\n",
+      "markdown": "```\n\n```",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "8"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 119,
+      "input": "    indented\n\n    second\n",
+      "accepted": true,
+      "html": "<pre><code>indented\n\nsecond\n</code></pre>\n",
+      "markdown": "    indented\n\n    second\n",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "25"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "4"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 120,
+      "input": "```\n<&amp;>\n```",
+      "accepted": true,
+      "html": "<pre><code>&lt;&amp;amp;&gt;\n</code></pre>\n",
+      "markdown": "```\n<&amp;>\n```",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "15"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 121,
+      "input": "<div>\nhello\n</div>\n\nnext",
+      "accepted": true,
+      "html": "<div>\nhello\n</div>\n\n<p>next</p>\n",
+      "markdown": "<div>\nhello\n</div>\n\nnext",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "24"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "5"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 122,
+      "input": "<!-- comment -->",
+      "accepted": true,
+      "html": "<!-- comment -->",
+      "markdown": "<!-- comment -->",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "16"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 123,
+      "input": "text\n\n    code\n",
+      "accepted": true,
+      "html": "<p>text</p>\n<pre><code>code\n</code></pre>\n",
+      "markdown": "text\n\n    code\n",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "15"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "4"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 124,
+      "input": "[x]: /target\n\n[x]",
+      "accepted": true,
+      "html": "<p><a href=\"/target\">x</a></p>\n",
+      "markdown": "[x]: /target\n\n[x]",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "17"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 125,
+      "input": "[nope][missing]",
+      "accepted": true,
+      "html": "<p>[nope][missing]</p>\n",
+      "markdown": "[nope][missing]",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "15"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 126,
+      "input": "<user+tag@example.com>",
+      "accepted": true,
+      "html": "<p><a href=\"mailto:user+tag@example.com\">user+tag@example.com</a></p>\n",
+      "markdown": "<user+tag@example.com>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "22"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 127,
+      "input": "https://example.com/?a=1&b=2",
+      "accepted": true,
+      "html": "<p><a href=\"https://example.com/?a=1&b=2\">https://example.com/?a=1&amp;b=2</a></p>\n",
+      "markdown": "https://example.com/?a=1&b=2",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "28"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 128,
+      "input": "http://example.com/a_(b)",
+      "accepted": true,
+      "html": "<p><a href=\"http://example.com/a_(b)\">http://example.com/a_(b)</a></p>\n",
+      "markdown": "http://example.com/a_(b)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "24"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 129,
+      "input": "para\n  continuation  ",
+      "accepted": true,
+      "html": "<p>para<br>  continuation  </p>\n",
+      "markdown": "para\n  continuation  ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "21"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 130,
+      "input": "line \n next",
+      "accepted": true,
+      "html": "<p>line<br> next</p>\n",
+      "markdown": "line \n next",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 131,
+      "input": "- one\n  continuation",
+      "accepted": true,
+      "html": "<ul>\n<li>one<br>continuation</li>\n</ul>\n",
+      "markdown": "- one\n  continuation",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "20"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 132,
+      "input": "![a \\*b\\*](x)",
+      "accepted": true,
+      "html": "<p><img src=\"x\" alt=\"a \\*b\\*\"></p>\n",
+      "markdown": "![a \\*b\\*](x)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "13"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 133,
+      "input": "![a \\[b\\]](x)",
+      "accepted": true,
+      "html": "<p><img src=\"x\" alt=\"a [b]\"></p>\n",
+      "markdown": "![a \\[b\\]](x)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "13"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 134,
+      "input": "![a ![b](y)](x)",
+      "accepted": true,
+      "html": "<p><img src=\"x\" alt=\"a ![b](y)\"></p>\n",
+      "markdown": "![a ![b](y)](x)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "15"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 135,
+      "input": "<a href=\"/\">https://example.com</a>",
+      "accepted": true,
+      "html": "<p><a href=\"/\">https://example.com</a></p>\n",
+      "markdown": "<a href=\"/\">https://example.com</a>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "35"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 136,
+      "input": "<code>a & b www.example.com</code>",
+      "accepted": true,
+      "html": "<p><code>a & b <a href=\"http://www.example.com\">www.example.com</a></code></p>\n",
+      "markdown": "<code>a & b www.example.com</code>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "34"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 137,
+      "input": "<kbd>*x* & y</kbd>",
+      "accepted": true,
+      "html": "<p><kbd><em>x</em> & y</kbd></p>\n",
+      "markdown": "<kbd>*x* & y</kbd>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "18"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 138,
+      "input": "~~a~~  ",
+      "accepted": true,
+      "html": "<p><del>a</del>  </p>\n",
+      "markdown": "~~a~~  ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "7"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 139,
+      "input": "*x*\n  y",
+      "accepted": true,
+      "html": "<p><em>x</em><br>  y</p>\n",
+      "markdown": "*x*\n  y",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "7"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 140,
+      "input": "foo\\_bar",
+      "accepted": true,
+      "html": "<p>foo_bar</p>\n",
+      "markdown": "foo\\_bar",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "8"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 141,
+      "input": "- one\n\n  > quote",
+      "accepted": true,
+      "html": "<ul>\n<li><p>one</p>\n<blockquote>\n<p>quote</p>\n</blockquote>\n</li>\n</ul>\n",
+      "markdown": "- one\n\n  > quote",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "16"
+        },
+        {
+          "title": "Words",
+          "text": "4"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 142,
+      "input": "1. one\n   continuation",
+      "accepted": true,
+      "html": "<ol>\n<li>one<br>continuation</li>\n</ol>\n",
+      "markdown": "1. one\n   continuation",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "22"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "2"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 143,
+      "input": "![a \"b\"](x \"t\")",
+      "accepted": true,
+      "html": "<p><img src=\"x\" alt=\"a &quot;b&quot;\" title=\"t\"></p>\n",
+      "markdown": "![a \"b\"](x \"t\")",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "15"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 144,
+      "input": "https://example.com/path?x=1&y=2.",
+      "accepted": true,
+      "html": "<p><a href=\"https://example.com/path?x=1&y=2\">https://example.com/path?x=1&amp;y=2</a>.</p>\n",
+      "markdown": "https://example.com/path?x=1&y=2.",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "33"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 145,
+      "input": "www.example.com/a?x=1&y=2",
+      "accepted": true,
+      "html": "<p><a href=\"http://www.example.com/a?x=1&y=2\">www.example.com/a?x=1&amp;y=2</a></p>\n",
+      "markdown": "www.example.com/a?x=1&y=2",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "25"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 146,
+      "input": "[a](http://example.com/😀)",
+      "accepted": true,
+      "html": "<p><a href=\"http://example.com/%F0%9F%98%80\">a</a></p>\n",
+      "markdown": "[a](http://example.com/😀)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "26"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 147,
+      "input": "[a](http://example.com/a%20b)",
+      "accepted": true,
+      "html": "<p><a href=\"http://example.com/a%20b\">a</a></p>\n",
+      "markdown": "[a](http://example.com/a%20b)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "29"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 148,
+      "input": "[![a](x)](y)",
+      "accepted": true,
+      "html": "<p><a href=\"y\"><img src=\"x\" alt=\"a\"></a></p>\n",
+      "markdown": "[![a](x)](y)",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "12"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 149,
+      "input": "~~foo~bar~~",
+      "accepted": true,
+      "html": "<p><del>foo~bar</del></p>\n",
+      "markdown": "~~foo~bar~~",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "11"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 150,
+      "input": "~~foo~~bar~~baz~~",
+      "accepted": true,
+      "html": "<p><del>foo</del>bar<del>baz</del></p>\n",
+      "markdown": "~~foo~~bar~~baz~~",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "17"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 151,
+      "input": "text <span>www.example.com</span>",
+      "accepted": true,
+      "html": "<p>text <span><a href=\"http://www.example.com\">www.example.com</a></span></p>\n",
+      "markdown": "text <span>www.example.com</span>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "33"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 152,
+      "input": "<textarea>www.example.com & x</textarea>",
+      "accepted": true,
+      "html": "<textarea>www.example.com & x</textarea>",
+      "markdown": "<textarea>www.example.com & x</textarea>",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "40"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 153,
+      "input": "| a \\| b | c |\n| - | - |\n| x | y |",
+      "accepted": true,
+      "html": "<table>\n<thead>\n<tr>\n<th>a | b</th>\n<th>c</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>x</td>\n<td>y</td>\n</tr>\n</tbody></table>\n",
+      "markdown": "| a \\| b | c |\n| - | - |\n| x | y |",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "34"
+        },
+        {
+          "title": "Words",
+          "text": "17"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 154,
+      "input": "[a](x \"one\\\"two\")",
+      "accepted": true,
+      "html": "<p><a href=\"x\" title=\"one&quot;two\">a</a></p>\n",
+      "markdown": "[a](x \"one\\\"two\")",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "17"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 155,
+      "input": "\\&amp;",
+      "accepted": true,
+      "html": "<p>&amp;amp;</p>\n",
+      "markdown": "\\&amp;",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "6"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 156,
+      "input": "[r]: /x\n\n![a][r]",
+      "accepted": true,
+      "html": "<p><img src=\"/x\" alt=\"a\"></p>\n",
+      "markdown": "[r]: /x\n\n![a][r]",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "16"
+        },
+        {
+          "title": "Words",
+          "text": "3"
+        },
+        {
+          "title": "Lines",
+          "text": "3"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 157,
+      "input": "[a](a[b])",
+      "accepted": true,
+      "html": "<p><a href=\"a%5Bb%5D\">a</a></p>\n",
+      "markdown": "[a](a[b])",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "9"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 158,
+      "input": "https://example.com/😀",
+      "accepted": true,
+      "html": "<p><a href=\"https://example.com/%F0%9F%98%80\">https://example.com/😀</a></p>\n",
+      "markdown": "https://example.com/😀",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "22"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 159,
+      "input": "www.example.com/日本",
+      "accepted": true,
+      "html": "<p><a href=\"http://www.example.com/%E6%97%A5%E6%9C%AC\">www.example.com/日本</a></p>\n",
+      "markdown": "www.example.com/日本",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "18"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 160,
+      "input": "\\\\&amp;",
+      "accepted": true,
+      "html": "<p>\\&amp;</p>\n",
+      "markdown": "\\\\&amp;",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "7"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 161,
+      "input": "# h1",
+      "accepted": true,
+      "html": "<h1>h1</h1>\n",
+      "markdown": "# h1",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "4"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 162,
+      "input": "## h2",
+      "accepted": true,
+      "html": "<h2>h2</h2>\n",
+      "markdown": "## h2",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 163,
+      "input": "### h3",
+      "accepted": true,
+      "html": "<h3>h3</h3>\n",
+      "markdown": "### h3",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "6"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 164,
+      "input": "#### h4",
+      "accepted": true,
+      "html": "<h4>h4</h4>\n",
+      "markdown": "#### h4",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "7"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 165,
+      "input": "##### h5",
+      "accepted": true,
+      "html": "<h5>h5</h5>\n",
+      "markdown": "##### h5",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "8"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 166,
+      "input": "###### h6",
+      "accepted": true,
+      "html": "<h6>h6</h6>\n",
+      "markdown": "###### h6",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "9"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 167,
+      "input": "\ta\tb\t",
+      "accepted": true,
+      "html": "<pre><code>a\tb\t\n</code></pre>\n",
+      "markdown": "\ta\tb\t",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 168,
+      "input": "\u000ba\u000bb\u000b",
+      "accepted": true,
+      "html": "<p>\u000ba\u000bb\u000b</p>\n",
+      "markdown": "\u000ba\u000bb\u000b",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 169,
+      "input": "\fa\fb\f",
+      "accepted": true,
+      "html": "<p>\fa\fb\f</p>\n",
+      "markdown": "\fa\fb\f",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 170,
+      "input": "\ra\rb\r",
+      "accepted": true,
+      "html": "<p>a<br>b</p>\n",
+      "markdown": "\ra\rb\r",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 171,
+      "input": "\na\nb\n",
+      "accepted": true,
+      "html": "<p>a<br>b</p>\n",
+      "markdown": "\na\nb\n",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "4"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 172,
+      "input": " a b ",
+      "accepted": true,
+      "html": "<p> a b </p>\n",
+      "markdown": " a b ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 173,
+      "input": " a b ",
+      "accepted": true,
+      "html": "<p> a b </p>\n",
+      "markdown": " a b ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 174,
+      "input": " a b ",
+      "accepted": true,
+      "html": "<p> a b </p>\n",
+      "markdown": " a b ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 175,
+      "input": " a b ",
+      "accepted": true,
+      "html": "<p> a b </p>\n",
+      "markdown": " a b ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 176,
+      "input": " a b ",
+      "accepted": true,
+      "html": "<p> a b </p>\n",
+      "markdown": " a b ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 177,
+      "input": " a b ",
+      "accepted": true,
+      "html": "<p> a b </p>\n",
+      "markdown": " a b ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 178,
+      "input": " a b ",
+      "accepted": true,
+      "html": "<p> a b </p>\n",
+      "markdown": " a b ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 179,
+      "input": " a b ",
+      "accepted": true,
+      "html": "<p> a b </p>\n",
+      "markdown": " a b ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 180,
+      "input": " a b ",
+      "accepted": true,
+      "html": "<p> a b </p>\n",
+      "markdown": " a b ",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 181,
+      "input": "　a　b　",
+      "accepted": true,
+      "html": "<p>　a　b　</p>\n",
+      "markdown": "　a　b　",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 182,
+      "input": "﻿a﻿b﻿",
+      "accepted": true,
+      "html": "<p>﻿a﻿b﻿</p>\n",
+      "markdown": "﻿a﻿b﻿",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "2"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    },
+    {
+      "index": 183,
+      "input": "ab",
+      "accepted": true,
+      "html": "<p>ab</p>\n",
+      "markdown": "ab",
+      "statistics": [
+        {
+          "title": "Characters",
+          "text": "5"
+        },
+        {
+          "title": "Words",
+          "text": "1"
+        },
+        {
+          "title": "Lines",
+          "text": "1"
+        }
+      ],
+      "actions": [
+        "Back to Editor",
+        "Copy Markdown",
+        "Copy HTML"
+      ]
+    }
+  ]
+}
